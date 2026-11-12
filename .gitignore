@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+clips/
+clips_sem_legenda/
+*.mp4
+*.mp3
+*.wav
+*.transcript.json
+fila_videos.txt

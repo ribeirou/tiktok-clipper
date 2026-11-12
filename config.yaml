@@ -1,0 +1,60 @@
+# Configurações do clipper. Cores em #RRGGBB.
+claude_model: claude-opus-5-5     # modelo usado na seleção de trechos (ex.: claude-sonnet-5-5, claude-haiku-5-5)
+whisper_model: small              # tiny | base | small | medium | large-v3
+model_dir: null                   # onde guardar os modelos do whisper (null = cache padrão)
+voicestudio_url: http://127.0.0.1:3900   # API local do VoiceStudio (endpoint /v1/audio/transcriptions)
+
+fonts_dir: C:/Windows/Fonts       # pasta de fontes para a legenda (Linux: /usr/share/fonts, macOS: /System/Library/Fonts)
+
+# exportação
+fps: 30
+video_bitrate: 6M
+max_bitrate: 8M
+audio_bitrate: 192k
+fade: 0.25                        # segundos de fade no início e no fim
+
+default_style: tiktok
+caption_styles:
+  tiktok:                         # branco, palavra atual amarela, contorno preto grosso
+    font: Arial Black
+    size: 88
+    color: "#FFFFFF"
+    highlight: "#FFE600"
+    outline: "#000000"
+    outline_width: 7
+    margin_v: 480                 # distância da base da tela (terço inferior, acima da UI do TikTok)
+    max_words: 3
+    uppercase: true
+  clean:                          # discreto, texto normal
+    font: Arial
+    size: 72
+    color: "#FFFFFF"
+    highlight: "#4DD0FF"
+    outline: "#000000"
+    outline_width: 5
+    margin_v: 420
+    max_words: 4
+    uppercase: false
+  yellow:                         # tudo amarelo, dentro da zona segura do TikTok (x 140–940, base y 1530)
+    font: Arial Black
+    size: 74
+    color: "#FFE600"
+    highlight: "#FFE600"
+    outline: "#000000"
+    outline_width: 7
+    margin_h: 140
+    margin_v: 390
+    max_words: 3
+    max_chars: 16
+    uppercase: true
+    pop: 108
+  neon:
+    font: Impact
+    size: 96
+    color: "#FFFFFF"
+    highlight: "#39FF14"
+    outline: "#1A0033"
+    outline_width: 8
+    margin_v: 480
+    max_words: 3
+    uppercase: true

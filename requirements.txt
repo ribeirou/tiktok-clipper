@@ -1,0 +1,11 @@
+﻿faster-whisper>=1.1
+av==15.1.0            # versão compatível com o faster-whisper (av>=16 quebra a leitura de áudio)
+opencv-python-headless>=4.9,<5   # o 5.x removeu o CascadeClassifier
+numpy
+anthropic>=0.40
+requests
+rich
+pyyaml
+python-dotenv
+yt-dlp                # só para entrada por URL
+imageio-ffmpeg        # ffmpeg embutido, se você não tiver no PATH
